@@ -7,20 +7,22 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const form = useRef();
+  console.log(process.env.REACT_APP_PUBLIC_KEY);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        'YOUR_PUBLIC_KEY'
+        process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
         (result) => {
           console.log(result.text);
+          e.target.reset();
         },
         (error) => {
           console.log(error.text);
@@ -55,12 +57,6 @@ const Contact = () => {
             name="user_email"
             id="floating_outlined"
             className="block px-2.5 pb-2.5 pt-4 w-full text-lg text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer placeholder-transparent"
-          />
-          <Input type="hidden" name="_captcha" value="false" />
-          <Input
-            type="hidden"
-            name="_next"
-            value="https://http://localhost:3001/"
           />
           <TextArea
             id="message"
