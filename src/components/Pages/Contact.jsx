@@ -5,8 +5,20 @@ import Input from '../UI/Input';
 import TextArea from '../UI/TextArea';
 import emailjs from '@emailjs/browser';
 import FormSubmit from '../FormSubmit';
+import { useForm } from 'react-hook-form';
 
 const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
   const [popup, setPopup] = useState(false);
   const form = useRef();
 
@@ -47,35 +59,34 @@ const Contact = () => {
         </div>
         <div className="w-2/4">
           <form
+            onSubmit={handleSubmit(onSubmit)}
             className="w-ful grid  grid-rows-1 gap-5 bg-white p-12 rounded-3xl shadow-xl text-slate-600"
             ref={form}
-            onSubmit={sendEmail}
           >
-            <Input
+            <input
+              defaultValue="test"
+              {...register('name', { required: true })}
               placeholder="Name"
               type="text"
-              name="user_name"
               id="floating_outlined"
-              className=" block px-2.5 pb-2.5 pt-5 w-full text-lg text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer placeholder-transparent"
+              className=" block px-2.5 pb-2.5 pt-5 w-full text-lg text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer placeholder-transparent"
             />
             <Input
               placeholder="E-mail"
               type="email"
-              name="user_email"
               id="floating_outlined"
-              className="block px-2.5 pb-2.5 pt-5 w-full text-lg text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer placeholder-transparent"
+              className="block px-2.5 pb-2.5 pt-5 w-full text-lg text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer placeholder-transparent"
             />
             <TextArea
               id="message"
               name="message"
               rows="4"
-              class="block p-2.5 w-full text-lg text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer"
+              className="block p-2.5 w-full text-lg text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer"
               placeholder="What about..."
             />
             <Button
               title="Contact me"
               type="submit"
-              value="Send"
               className="border-0 text-white bg-indigo-500 p-4 rounded-lg w-full hover:bg-indigo-400 transition-color duration-300 focus:bg-indigo-600"
             />
           </form>

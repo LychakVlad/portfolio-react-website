@@ -5,7 +5,7 @@ const TextArea = (ref) => {
     <div>
       <label
         for="message"
-        class="block mb-2 text-lg font-medium text-indigo-950 dark:text-white"
+        className="block mb-2 text-lg font-medium text-indigo-950 dark:text-white"
       >
         Your message
       </label>

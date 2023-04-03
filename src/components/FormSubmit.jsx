@@ -4,7 +4,6 @@ import Button from './UI/Button';
 import cn from 'classnames';
 
 const FormSubmit = ({ popup, closePopup }) => {
-  console.log({ closePopup });
   return (
     <div
       onClick={closePopup}
