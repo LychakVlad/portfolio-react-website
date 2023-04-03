@@ -22,8 +22,6 @@ const Contact = () => {
   };
 
   const onSubmit = (e) => {
-    console.log(e);
-
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
@@ -34,8 +32,8 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          form.current.reset();
           setPopup(true);
-          e.target.reset();
         },
         (error) => {
           console.log(error.text);
@@ -61,13 +59,14 @@ const Contact = () => {
             <div className="relative">
               <input
                 {...register('user_name', { required: 'Name is required' })}
+                defaultValue=""
                 placeholder="Name"
                 type="text"
                 id="floating_outlined"
                 className={cn(
-                  ' block px-2.5 pb-2.5 pt-5 w-full text-lg text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer placeholder-transparent',
+                  ' block px-2.5 pb-2.5 pt-5 w-full text-lg text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none  dark:border-indigo-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer placeholder-transparent',
                   {
-                    'focus:border-red-500 border-red-500 animate-headShake':
+                    'focus:border-red-500 border-red-500 dark:focus:border-red-500 dark:border-red-500 animate-headShake':
                       errors?.user_name,
                   }
                 )}
@@ -77,7 +76,7 @@ const Contact = () => {
                 className={cn(
                   'pointer-events-none absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-2 origin-[0] bg-transparent  px-3  peer-focus:text-indigo-600  peer-focus:dark:text-indigo-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-4 peer-focus:scale-75 peer-focus:-translate-y-4 left-1 peer-focus:bg-transparent',
                   {
-                    'focus:text-red-500 peer-focus:text-red-500 text-red-500 ':
+                    'focus:text-red-500 peer-focus:text-red-500 text-red-500  dark:focus:text-red-500 dark:peer-focus:text-red-500 dark:text-red-500':
                       errors?.user_name,
                   }
                 )}
@@ -105,13 +104,14 @@ const Contact = () => {
                     message: 'Please enter valid email',
                   },
                 })}
+                defaultValue=""
                 placeholder="Email"
                 type="text"
                 id="floating_outlined"
                 className={cn(
-                  ' block px-2.5 pb-2.5 pt-5 w-full text-lg text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer placeholder-transparent',
+                  ' block px-2.5 pb-2.5 pt-5 w-full text-lg text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none  dark:border-indigo-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer placeholder-transparent',
                   {
-                    'focus:border-red-500 border-red-500 animate-headShake':
+                    'focus:border-red-500 border-red-500 animate-headShake dark:focus:border-red-500 dark:border-red-500':
                       errors?.user_email,
                   }
                 )}
@@ -121,7 +121,7 @@ const Contact = () => {
                 className={cn(
                   'pointer-events-none absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-2 origin-[0] bg-transparent  px-3  peer-focus:text-indigo-600  peer-focus:dark:text-indigo-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-4 peer-focus:scale-75 peer-focus:-translate-y-4 left-1 peer-focus:bg-transparent',
                   {
-                    'focus:text-red-500 peer-focus:text-red-500 text-red-500 ':
+                    'focus:text-red-500 peer-focus:text-red-500 text-red-500  dark:focus:text-red-500 dark:peer-focus:text-red-500 dark:text-red-500':
                       errors?.user_email,
                   }
                 )}
@@ -144,7 +144,7 @@ const Contact = () => {
               id="message"
               name="message"
               rows="4"
-              className="block p-2.5 w-full text-lg text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer"
+              className="block p-2.5 w-full text-lg text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none dark:border-indigo-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer"
               placeholder="What about..."
             />
             <Button

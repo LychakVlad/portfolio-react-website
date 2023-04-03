@@ -1,10 +1,10 @@
 import React from 'react';
-import LargeTitle from './Titles/LargeTitle';
-import LargeSubTitle from './Titles/LargeSubTitle';
-import ProjectItem from './ProjectItem';
-import Allegria from '../assets/allegria.png';
-import ToDo from '../assets/ToDo.png';
-import Portfolio from '../assets/portfolio.png';
+import LargeTitle from '../Titles/LargeTitle';
+import LargeSubTitle from '../Titles/LargeSubTitle';
+import ProjectItem from '../ProjectItem';
+import Allegria from '../../assets/allegria.png';
+import ToDo from '../../assets/ToDo.png';
+import Portfolio from '../../assets/portfolio.png';
 
 const Projects = () => {
   const firstProject = {

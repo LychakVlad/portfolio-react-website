@@ -1,19 +1,19 @@
 import React from 'react';
-import Html from '../assets/html.svg';
-import Css from '../assets/css3.svg';
-import Js from '../assets/js.svg';
-import ReactIcons from '../assets/react.svg';
-import Tailwind from '../assets/tailwind.svg';
-import Sass from '../assets/sass.svg';
-import Bootstrap from '../assets/bootstrap.svg';
-import Pug from '../assets/pug.svg';
-import Gulp from '../assets/gulp.svg';
-import Git from '../assets/git.svg';
-import Node from '../assets/node-js.svg';
-import Npm from '../assets/npm.svg';
-import SkillItem from './SkillItem';
-import LargeTitle from './Titles/LargeTitle';
-import LargeSubTitle from './Titles/LargeSubTitle';
+import Html from '../../assets/html.svg';
+import Css from '../../assets/css3.svg';
+import Js from '../../assets/js.svg';
+import ReactIcons from '../../assets/react.svg';
+import Tailwind from '../../assets/tailwind.svg';
+import Sass from '../../assets/sass.svg';
+import Bootstrap from '../../assets/bootstrap.svg';
+import Pug from '../../assets/pug.svg';
+import Gulp from '../../assets/gulp.svg';
+import Git from '../../assets/git.svg';
+import Node from '../../assets/node-js.svg';
+import Npm from '../../assets/npm.svg';
+import SkillItem from '../SkillItem';
+import LargeTitle from '../Titles/LargeTitle';
+import LargeSubTitle from '../Titles/LargeSubTitle';
 
 const Skills = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import Photo from '../assets/photo.jpg';
+import Photo from '../../assets/photo.jpg';
 
 const Home = () => {
   return (
@@ -8,14 +8,14 @@ const Home = () => {
       className="section container xl m-auto min-h-screen text-indigo-950 flex items-center justify-around font-poppins"
     >
       <div>
-        <h1 className="font-bold  text-7xl   mx-4  leading-tight">
+        <h1 className="font-bold  text-7xl   mx-4  leading-tight dark:text-neutral-100">
           Hi <span className="inline-block animate-waving-hand">👋 </span>
           <br /> My name is{' '}
-          <p className="bg-gradient-to-r from-blue-400 to-emerald-400 text-transparent bg-clip-text">
+          <p className="bg-gradient-to-r from-blue-400 to-emerald-400 dark:to-blue-600 dark:from-indigo-400 text-transparent bg-clip-text">
             Vladislav Lychak
           </p>
         </h1>
-        <h2 className="font-medium text-3xl   m-4  leading-tight text-indigo-900 max-w-md">
+        <h2 className="font-medium text-3xl   m-4  leading-tight text-indigo-900 max-w-md dark:text-neutral-300">
           Front end developer with passion for problem solving and creating new
           things
         </h2>

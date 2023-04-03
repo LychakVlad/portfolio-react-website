@@ -5,7 +5,7 @@ import Search from '../assets/search.svg';
 
 const ProjectItem = ({ link, project }) => {
   return (
-    <div className="flex rounded-3xl overflow-hidden bg-white p-16 items-center mb-14 hover:scale-105 transition-transform duration-300 cursor-default shadow-xl">
+    <div className="flex rounded-3xl overflow-hidden bg-white dark:bg-neutral-100 p-16 items-center mb-14 hover:scale-105 transition-transform duration-300 cursor-default shadow-xl">
       <div className=" max-w-sm mr-8">
         <MediumTitle title={project.title} />
         <p className="text-slate-600">{project.description}</p>
