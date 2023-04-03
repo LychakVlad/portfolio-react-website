@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TextArea = (ref) => {
+const TextArea = (props) => {
   return (
     <div>
       <label
@@ -9,7 +9,7 @@ const TextArea = (ref) => {
       >
         Your message
       </label>
-      <textarea {...ref}></textarea>
+      <textarea {...props}></textarea>
     </div>
   );
 };

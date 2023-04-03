@@ -1,23 +1,18 @@
 import React, { useRef, useState } from 'react';
 import LargeTitle from '../Titles/LargeTitle';
 import Button from '../UI/Button';
-import Input from '../UI/Input';
 import TextArea from '../UI/TextArea';
 import emailjs from '@emailjs/browser';
 import FormSubmit from '../FormSubmit';
 import { useForm } from 'react-hook-form';
+import cn from 'classnames';
 
 const Contact = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
-
-  const onSubmit = (data) => {
-    console.log(data);
-  };
 
   const [popup, setPopup] = useState(false);
   const form = useRef();
@@ -26,8 +21,8 @@ const Contact = () => {
     setPopup(false);
   };
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const onSubmit = (e) => {
+    console.log(e);
 
     emailjs
       .sendForm(
@@ -63,20 +58,88 @@ const Contact = () => {
             className="w-ful grid  grid-rows-1 gap-5 bg-white p-12 rounded-3xl shadow-xl text-slate-600"
             ref={form}
           >
-            <input
-              defaultValue="test"
-              {...register('name', { required: true })}
-              placeholder="Name"
-              type="text"
-              id="floating_outlined"
-              className=" block px-2.5 pb-2.5 pt-5 w-full text-lg text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer placeholder-transparent"
-            />
-            <Input
-              placeholder="E-mail"
-              type="email"
-              id="floating_outlined"
-              className="block px-2.5 pb-2.5 pt-5 w-full text-lg text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer placeholder-transparent"
-            />
+            <div className="relative">
+              <input
+                {...register('user_name', { required: 'Name is required' })}
+                placeholder="Name"
+                type="text"
+                id="floating_outlined"
+                className={cn(
+                  ' block px-2.5 pb-2.5 pt-5 w-full text-lg text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer placeholder-transparent',
+                  {
+                    'focus:border-red-500 border-red-500 animate-headShake':
+                      errors?.user_name,
+                  }
+                )}
+              />
+              <label
+                for="floating_outlined"
+                className={cn(
+                  'pointer-events-none absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-2 origin-[0] bg-transparent  px-3  peer-focus:text-indigo-600  peer-focus:dark:text-indigo-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-4 peer-focus:scale-75 peer-focus:-translate-y-4 left-1 peer-focus:bg-transparent',
+                  {
+                    'focus:text-red-500 peer-focus:text-red-500 text-red-500 ':
+                      errors?.user_name,
+                  }
+                )}
+              >
+                Name
+              </label>
+            </div>
+            <div
+              className={cn(
+                'max-h-0 opacity-0 transition-all duration-300 -mt-4 px-3',
+                {
+                  'max-h-1 opacity-100 text-red-500': errors?.user_name,
+                }
+              )}
+            >
+              {errors.user_name?.message}
+            </div>
+
+            <div className="relative">
+              <input
+                {...register('user_email', {
+                  required: 'Email is required',
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                    message: 'Please enter valid email',
+                  },
+                })}
+                placeholder="Email"
+                type="text"
+                id="floating_outlined"
+                className={cn(
+                  ' block px-2.5 pb-2.5 pt-5 w-full text-lg text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-indigo-500 focus:outline-none focus:ring-0 focus:border-indigo-600 peer placeholder-transparent',
+                  {
+                    'focus:border-red-500 border-red-500 animate-headShake':
+                      errors?.user_email,
+                  }
+                )}
+              />
+              <label
+                for="floating_outlined"
+                className={cn(
+                  'pointer-events-none absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-2 origin-[0] bg-transparent  px-3  peer-focus:text-indigo-600  peer-focus:dark:text-indigo-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-4 peer-focus:scale-75 peer-focus:-translate-y-4 left-1 peer-focus:bg-transparent',
+                  {
+                    'focus:text-red-500 peer-focus:text-red-500 text-red-500 ':
+                      errors?.user_email,
+                  }
+                )}
+              >
+                Email
+              </label>
+            </div>
+            <div
+              className={cn(
+                'max-h-0 opacity-0 transition-all duration-300 -mt-4 px-3',
+                {
+                  'max-h-1 opacity-100 text-red-500': errors?.user_email,
+                }
+              )}
+            >
+              {errors.user_email?.message}
+            </div>
+
             <TextArea
               id="message"
               name="message"

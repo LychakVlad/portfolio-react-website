@@ -1,5 +1,4 @@
 import React from 'react';
-import LargeSubTitle from '../Titles/LargeSubTitle';
 import LargeTitle from '../Titles/LargeTitle';
 import MediumTitle from '../Titles/MediumTitle';
 import HikingPhoto from '../../assets/hiking.JPG';
