@@ -13,9 +13,9 @@ const About = () => {
         <LargeTitle title="About me" />
       </div>
       <div className="grid  grid-cols-3">
-        <div className=" bg-white dark:bg-neutral-100 p-12  rounded-3xl  mr-12 hover:scale-105 transition-transform duration-300 cursor-default relative group shadow-xl">
+        <div className=" bg-white dark:bg-indigo-900 p-12  rounded-3xl  mr-12 hover:scale-105 transition-transform duration-300 cursor-default relative group shadow-xl">
           <MediumTitle title="Experience" />
-          <p className="text-slate-600">
+          <p className="text-slate-600 dark:text-slate-300">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo,
             adipisci quis repudiandae placeat libero sed, alias ullam veniam
             velit, cupiditate eius. Fuga voluptatum repudiandae quod nostrum
@@ -23,9 +23,9 @@ const About = () => {
             corporis officia reiciendis beatae.
           </p>
         </div>
-        <div className=" bg-white p-12  dark:bg-neutral-100 rounded-3xl mr-12 hover:scale-105 transition-transform duration-300 cursor-default relative group shadow-xl">
+        <div className=" bg-white p-12  dark:bg-indigo-900 rounded-3xl mr-12 hover:scale-105 transition-transform duration-300 cursor-default relative group shadow-xl">
           <MediumTitle title="Personal" />
-          <p className="text-slate-600">
+          <p className="text-slate-600 dark:text-slate-300">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo,
             adipisci quis repudiandae placeat libero sed, alias ullam veniam
             velit, cupiditate eius. Fuga voluptatum repudiandae quod nostrum

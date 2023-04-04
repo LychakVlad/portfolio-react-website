@@ -15,7 +15,6 @@ const DarkMode = () => {
 
   return (
     <div className="flex items-center">
-      <p className="mr-2">Mode</p>
       <DarkModeSwitch checked={darkSide} onChange={toggleDarkMode} size={44} />
     </div>
   );

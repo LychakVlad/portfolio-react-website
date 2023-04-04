@@ -1,2 +1,2 @@
-Dark Mode
 Mobile version
+Change icons

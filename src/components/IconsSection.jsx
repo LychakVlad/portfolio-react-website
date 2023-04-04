@@ -11,15 +11,7 @@ const IconsSection = () => {
         href="mailto: lycakvladislav@gmail.com"
         className="px-2 hover:opacity-70  transition-opacity duration-300  dark:fill-slate-200"
       >
-        <Google />
-      </a>
-      <a
-        href="https://github.com/LychakVlad"
-        target="_blank"
-        rel="noreferrer"
-        className="px-2 hover:opacity-70  transition-opacity duration-300 dark:fill-slate-200"
-      >
-        <Github />
+        <Google style={{ width: 50, height: 50 }} />
       </a>
       <a
         href="https://t.me/Relast1"
@@ -27,7 +19,7 @@ const IconsSection = () => {
         rel="noreferrer"
         className="px-2 hover:opacity-70  transition-opacity duration-300 dark:fill-slate-200"
       >
-        <Telegram />
+        <Telegram style={{ width: 50, height: 50 }} />
       </a>
       <a
         href="https://www.linkedin.com/in/vladislav-lychak/"
@@ -35,7 +27,15 @@ const IconsSection = () => {
         rel="noreferrer"
         className="px-2 hover:opacity-70  transition-opacity duration-300 dark:fill-slate-200"
       >
-        <Linkedin />
+        <Linkedin style={{ width: 50, height: 50 }} />
+      </a>
+      <a
+        href="https://github.com/LychakVlad"
+        target="_blank"
+        rel="noreferrer"
+        className="px-2 hover:opacity-70  transition-opacity duration-300 dark:fill-slate-200"
+      >
+        <Github style={{ width: 44, height: 50 }} />
       </a>
     </div>
   );
