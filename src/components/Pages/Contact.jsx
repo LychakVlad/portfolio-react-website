@@ -50,10 +50,10 @@ const Contact = () => {
         <div className="text-center mb-8">
           <LargeTitle title="Lets talk about your ideas!" />
         </div>
-        <div className="w-2/4 ">
+        <div className="w-full px-5">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="w-ful grid  grid-rows-1 gap-5 bg-white p-12 rounded-3xl shadow-xl text-slate-600 dark:bg-indigo-900"
+            className="w-ful grid  grid-rows-1 gap-5 bg-white p-12 rounded-3xl shadow-xl m-auto text-slate-600 dark:bg-indigo-900  max-w-xl max-lg:p-7 "
             ref={form}
           >
             <div className="relative">
@@ -76,7 +76,7 @@ const Contact = () => {
                 className={cn(
                   'pointer-events-none absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-2 origin-[0] bg-transparent  px-3  peer-focus:text-indigo-400  peer-focus:dark:text-indigo-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-4 peer-focus:scale-75 peer-focus:-translate-y-4 left-1 peer-focus:bg-transparent ',
                   {
-                    'focus:text-red-500 peer-focus:text-red-500 text-red-500  dark:focus:text-red-500 dark:peer-focus:text-red-500 dark:text-red-500':
+                    'focus:text-red-500 peer-focus:text-red-500 text-red-500  dark:focus:text-red-500 peer-focus:dark:text-red-500 dark:text-red-500':
                       errors?.user_name,
                   }
                 )}
@@ -121,7 +121,7 @@ const Contact = () => {
                 className={cn(
                   'pointer-events-none absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-2 origin-[0] bg-transparent  px-3  peer-focus:text-indigo-400  peer-focus:dark:text-indigo-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-4 peer-focus:scale-75 peer-focus:-translate-y-4 left-1 peer-focus:bg-transparent',
                   {
-                    'focus:text-red-500 peer-focus:text-red-500 text-red-500  dark:focus:text-red-500 dark:peer-focus:text-red-500 dark:text-red-500':
+                    'peer-focus:dark:text-red-500 focus:text-red-500 peer-focus:text-red-500 text-red-500  dark:focus:text-red-500 dark:text-red-500':
                       errors?.user_email,
                   }
                 )}
@@ -144,8 +144,8 @@ const Contact = () => {
               id="message"
               name="message"
               rows="4"
-              className="block p-2.5 w-full text-lg text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none dark:border-indigo-600 dark:focus:border-indigo-400 focus:outline-none focus:ring-0 focus:border-indigo-400 peer dark:text-slate-300"
-              placeholder="What about..."
+              className="block p-2.5 w-full text-lg placeholder:text-gray-400 text-indigo-900 bg-transparent rounded-lg border-2 border-gray-300 appearance-none dark:border-indigo-600 dark:focus:border-indigo-400 focus:outline-none focus:ring-0 focus:border-indigo-400 peer dark:text-slate-300"
+              placeholder="Your message"
             />
             <Button
               title="Contact me"

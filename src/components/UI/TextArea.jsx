@@ -5,10 +5,8 @@ const TextArea = (props) => {
     <div>
       <label
         for="message"
-        className="block mb-2 text-lg font-medium text-indigo-950 dark:text-white"
-      >
-        Your message
-      </label>
+        className="block mb-2 text-lg font-medium text-indigo-950 dark:text-slate-200"
+      ></label>
       <textarea {...props}></textarea>
     </div>
   );

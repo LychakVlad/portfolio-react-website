@@ -19,13 +19,13 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="section container xl  mx-auto min-h-full text-indigo-950 flex items-center font-poppins flex-col mb-24"
+      className="section container xl  mx-auto min-h-full text-indigo-950 flex items-center font-poppins flex-col mb-24 px-8"
     >
       <div className="text-center my-20">
         <LargeTitle title="My Tech Stack" />
         <LargeSubTitle title="Technologies I have been working with recently" />
       </div>
-      <div className="grid grid-cols-6 grid-rows-2 gap-14">
+      <div className="grid grid-cols-6 grid-rows-2 gap-14 max-lg:grid-cols-2">
         <SkillItem link={Html} title={'HTML5'} />
         <SkillItem link={Css} title={'CSS3'} />
         <SkillItem link={Js} title={'Java Script'} />

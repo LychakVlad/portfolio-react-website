@@ -7,15 +7,15 @@ const About = () => {
   return (
     <div
       id="about"
-      className="section container xl  mx-auto min-h-full text-indigo-950 flex items-center font-poppins flex-col mb-36"
+      className="container xl  mx-auto min-h-full text-indigo-950 flex items-center font-poppins flex-col mb-36 "
     >
       <div className="text-center my-20">
         <LargeTitle title="About me" />
       </div>
-      <div className="grid  grid-cols-3">
-        <div className=" bg-white dark:bg-indigo-900 p-12  rounded-3xl  mr-12 hover:scale-105 transition-transform duration-300 cursor-default relative group shadow-xl">
+      <div className="grid  grid-cols-3 max-lg:grid-cols-1 max-lg:grid-rows-3 max-lg:px-5 max-lg: gap-y-9">
+        <div className=" bg-white dark:bg-indigo-900 p-12  rounded-3xl  mr-12 hover:scale-105 transition-transform duration-300 cursor-default relative group shadow-xl max-lg:m-auto">
           <MediumTitle title="Experience" />
-          <p className="text-slate-600 dark:text-slate-300">
+          <p className="text-slate-600 dark:text-slate-200">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo,
             adipisci quis repudiandae placeat libero sed, alias ullam veniam
             velit, cupiditate eius. Fuga voluptatum repudiandae quod nostrum
@@ -23,9 +23,9 @@ const About = () => {
             corporis officia reiciendis beatae.
           </p>
         </div>
-        <div className=" bg-white p-12  dark:bg-indigo-900 rounded-3xl mr-12 hover:scale-105 transition-transform duration-300 cursor-default relative group shadow-xl">
+        <div className=" bg-white p-12  dark:bg-indigo-900 rounded-3xl mr-12 hover:scale-105 transition-transform duration-300 cursor-default relative group shadow-xl max-lg:m-auto">
           <MediumTitle title="Personal" />
-          <p className="text-slate-600 dark:text-slate-300">
+          <p className="text-slate-600 dark:text-slate-200">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo,
             adipisci quis repudiandae placeat libero sed, alias ullam veniam
             velit, cupiditate eius. Fuga voluptatum repudiandae quod nostrum

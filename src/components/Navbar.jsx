@@ -6,8 +6,8 @@ import DarkMode from './DarkMode';
 
 const Navbar = () => {
   return (
-    <div className=" absolute  left-2/4  -translate-x-2/4 h-[90px] flex justify-evenly container xl  mx-auto items-center  text-indigo-950 text-2xl font-poppins">
-      <div className="max-lg:hidden">
+    <div className=" absolute  left-2/4  -translate-x-2/4 h-[90px] flex justify-evenly container xl  mx-auto items-center  text-indigo-950 text-2xl font-poppins max-lg:relative max-lg:px-10">
+      <div className="max-lg:hidden ">
         <ul className="flex">
           <li className="mx-4 relative group">
             <AnchorLink
@@ -51,7 +51,9 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <IconsSection />
+      <div className="hidden">
+        <IconsSection />
+      </div>
       <DarkMode />
     </div>
   );

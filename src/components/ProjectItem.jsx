@@ -5,15 +5,15 @@ import { ReactComponent as Search } from '../assets/search.svg';
 
 const ProjectItem = ({ link, project }) => {
   return (
-    <div className="flex rounded-3xl overflow-hidden bg-white dark:bg-indigo-900 p-16 items-center mb-14 hover:scale-105 transition-transform duration-300 cursor-default shadow-xl">
+    <div className="flex rounded-3xl overflow-hidden bg-white dark:bg-indigo-900 p-16 items-center mb-14 hover:scale-105 transition-transform duration-300 cursor-default shadow-xl max-lg:flex-col">
       <div className=" max-w-sm mr-8">
         <MediumTitle title={project.title} />
-        <p className="text-slate-600 dark:text-slate-300">
+        <p className="text-slate-600 dark:text-slate-200">
           {project.description}
         </p>
         <div className="mt-5">
           {project.techs.map((item) => (
-            <span className=" p-1 px-5 bg-slate-300 rounded-md  mr-5 pointer-events-none">
+            <span className=" p-1 px-5 bg-slate-200 rounded-md  mr-5 pointer-events-none">
               {item}
             </span>
           ))}
@@ -47,7 +47,7 @@ const ProjectItem = ({ link, project }) => {
           </a>
         </div>
       </div>
-      <div className="" style={{ width: '600px' }}>
+      <div className="w-[300px] max-lg:w-[300px]">
         <img src={link} alt={project.title} />
       </div>
     </div>
