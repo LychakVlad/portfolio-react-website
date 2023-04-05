@@ -1,2 +1,1 @@
 Mobile version
-Change icons

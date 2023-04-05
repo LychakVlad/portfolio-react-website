@@ -7,7 +7,7 @@ import DarkMode from './DarkMode';
 const Navbar = () => {
   return (
     <div className=" absolute  left-2/4  -translate-x-2/4 h-[90px] flex justify-evenly container xl  mx-auto items-center  text-indigo-950 text-2xl font-poppins">
-      <div>
+      <div className="max-lg:hidden">
         <ul className="flex">
           <li className="mx-4 relative group">
             <AnchorLink

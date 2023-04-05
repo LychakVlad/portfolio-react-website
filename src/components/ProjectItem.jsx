@@ -27,8 +27,8 @@ const ProjectItem = ({ link, project }) => {
           >
             <Githubs style={{ width: 38, height: 38 }} />
             <p className="relative group ml-2 ">
-              <span className="relative dark:text-slate-300">View Code </span>
-              <span className="absolute -bottom-1 left-0 w-0 h-[2px] dark:bg-slate-300 bg-indigo-950 transition-width duration-300 group-hover:w-full"></span>
+              <span className="relative dark:text-slate-200">View Code </span>
+              <span className="absolute -bottom-1 left-0 w-0 h-[2px] dark:bg-slate-200 bg-indigo-950 transition-width duration-300 group-hover:w-full"></span>
             </p>
           </a>
           <a
@@ -39,10 +39,10 @@ const ProjectItem = ({ link, project }) => {
           >
             <Search style={{ width: 34, height: 34 }} />
             <p className="relative group ml-2">
-              <span className="relative dark:text-slate-300">
+              <span className="relative dark:text-slate-200">
                 Live Preview{' '}
               </span>
-              <span className="absolute -bottom-1 left-0 w-0 h-[2px]  bg-indigo-950 dark:bg-slate-300 transition-width duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-[2px]  bg-indigo-950 dark:bg-slate-200 transition-width duration-300 group-hover:w-full"></span>
             </p>
           </a>
         </div>
