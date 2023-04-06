@@ -37,13 +37,13 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="container  mx-auto min-h-screen text-indigo-950 flex items-center font-poppins flex-col mb-24"
+      className="  mx-auto min-h-screen text-indigo-950 flex items-center font-poppins flex-col mb-24 px-8"
     >
       <div className="text-center my-20">
         <LargeTitle title="Projects" />
         <LargeSubTitle title="Things i have built so far" />
       </div>
-      <div>
+      <div className="">
         <ProjectItem link={Allegria} project={firstProject} />
         <ProjectItem link={Portfolio} project={thirdProject} />
         <ProjectItem link={ToDo} project={secondProject} />

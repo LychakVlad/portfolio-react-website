@@ -51,7 +51,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="hidden">
+      <div className="max-lg:hidden">
         <IconsSection />
       </div>
       <DarkMode />
