@@ -6,14 +6,14 @@ import { ReactComponent as Search } from '../assets/search.svg';
 const ProjectItem = ({ link, project }) => {
   return (
     <div className="flex rounded-3xl overflow-hidden bg-white dark:bg-indigo-900 p-12 items-center mb-14 hover:scale-105 transition-transform duration-300 cursor-default shadow-xl max-lg:flex-col max-lg:p-0 ">
-      <div className=" max-w-xs mr-8 max-lg:mr-0 max-md:px-4 max-md:pt-7">
+      <div className=" max-w-xs mr-8 max-lg:mr-0 max-md:px-4 max-md:pt-7 max-lg:pt-10 relative">
         <MediumTitle title={project.title} />
-        <p className="text-slate-600 dark:text-slate-200 max-md:text-sm">
+        <p className="text-slate-600 dark:text-slate-200 max-md:text-sm max-lg:text-xl">
           {project.description}
         </p>
         <div className="mt-5">
           {project.techs.map((item) => (
-            <span className=" p-1 px-5 bg-slate-200 rounded-md  mr-5 pointer-events-none max-lg:mr-0 max-lg:text-sm max-md:mr-2 max-md:px-3">
+            <span className=" p-1 px-5 bg-slate-200 rounded-md  mr-5 pointer-events-none max-lg:text-sm max-md:mr-2 max-md:px-3 max-lg:mr-4">
               {item}
             </span>
           ))}
@@ -33,12 +33,12 @@ const ProjectItem = ({ link, project }) => {
           </a>
           <a
             href={project.link1}
-            className="flex items-center  hover:opacity-80 transition-opacity duration-300 cursor-pointer dark:fill-slate-200  fill-indigo-950"
+            className="flex items-center  hover:opacity-80 transition-opacity duration-300 cursor-pointer dark:fill-slate-200  fill-indigo-950 ml-4"
             target="_blank"
             rel="noreferrer"
           >
             <Search style={{ width: 34, height: 34 }} />
-            <p className="relative group ">
+            <p className="relative group ml-2">
               <span className="relative dark:text-slate-200">
                 Live Preview{' '}
               </span>
@@ -47,8 +47,8 @@ const ProjectItem = ({ link, project }) => {
           </a>
         </div>
       </div>
-      <div className="w-[550px] max-lg:w-[300px] my-8 px-4 rounded-2xl overflow-hidden">
-        <img src={link} alt={project.title} />
+      <div className="w-[550px] max-lg:w-[450px] my-8 px-4 overflow-hidden max-md:w-[300px]">
+        <img src={link} alt={project.title} className="rounded-3xl" />
       </div>
     </div>
   );

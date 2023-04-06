@@ -43,7 +43,7 @@ const Projects = () => {
         <LargeTitle title="Projects" />
         <LargeSubTitle title="Things i have built so far" />
       </div>
-      <div className="">
+      <div className="max-lg:w-3/4 max-md:w-auto">
         <ProjectItem link={Allegria} project={firstProject} />
         <ProjectItem link={Portfolio} project={thirdProject} />
         <ProjectItem link={ToDo} project={secondProject} />

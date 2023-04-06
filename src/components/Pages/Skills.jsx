@@ -25,7 +25,7 @@ const Skills = () => {
         <LargeTitle title="My Tech Stack" />
         <LargeSubTitle title="Technologies I have been working with recently" />
       </div>
-      <div className="grid grid-cols-6 grid-rows-2 max-sm:grid-cols-2 gap-14 max-md:grid-cols-3">
+      <div className="grid grid-cols-6 grid-rows-2 max-sm:grid-cols-2 gap-14 max-md:grid-cols-3 max-lg:grid-cols-3">
         <SkillItem link={Html} title={'HTML5'} />
         <SkillItem link={Css} title={'CSS3'} />
         <SkillItem link={Js} title={'Java Script'} />

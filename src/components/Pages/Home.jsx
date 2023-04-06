@@ -5,7 +5,8 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="section container xl m-auto min-h-screen text-indigo-950 flex items-center justify-around font-poppins max-lg:flex-col px-8 max-lg"
+      className="section container xl m-auto min-h-screen text-indigo-950 flex items-center justify-around font-poppins max-lg:flex-col px-8 max-lg 
+      max-lg:justify-center max-lg:min-h-full pt-16"
     >
       <div>
         <h1 className="font-bold  text-7xl   mx-4  leading-tight dark:text-neutral-100 max-sm:text-5xl">
@@ -21,7 +22,7 @@ const Home = () => {
         </h2>
       </div>
       <div>
-        <div className="shape overflow-hidden shadow-2xl w-[400px]  max-md:w-[320px] max-lg:mt-10 max-md:mt-0">
+        <div className="shape overflow-hidden shadow-2xl w-[400px]  max-md:w-[320px] max-lg:mt-10 max-md:mt-4">
           <img src={Photo} alt="My photo" />
         </div>
       </div>
