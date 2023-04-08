@@ -4,7 +4,7 @@ const TextArea = (props) => {
   return (
     <div>
       <label
-        for="message"
+        htmlFor="message"
         className="block mb-2 text-lg font-medium text-indigo-950 dark:text-slate-200"
       ></label>
       <textarea {...props}></textarea>

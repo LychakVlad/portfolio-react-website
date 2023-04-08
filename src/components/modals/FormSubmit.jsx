@@ -1,6 +1,6 @@
 import React from 'react';
-import LargeSubTitle from './Titles/LargeSubTitle';
-import Button from './UI/Button';
+import LargeSubTitle from '../Titles/LargeSubTitle';
+import Button from '../UI/Button';
 import cn from 'classnames';
 
 const FormSubmit = ({ popup, closePopup }) => {

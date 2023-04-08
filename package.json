@@ -1,7 +1,7 @@
 {
-  "name": "react-app-portfolio",
+  "name": "portfolio-react-website",
   "version": "0.1.0",
-  "homepage": "https://LychakVlad.github.io/portfolio-react-app",
+  "homepage": "https://LychakVlad.github.io/portfolio-react-website",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "body-scroll-lock": "^4.0.0-beta.0",
     "classnames": "^2.3.2",
     "dotenv": "^16.0.3",
     "emailjs": "^4.0.1",

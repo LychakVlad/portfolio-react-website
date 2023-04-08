@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import classNames from 'classnames';
 
-function BurgerIcon() {
-  const [opened, setOpened] = useState(false);
-
+function BurgerIcon({ opened, menuHandler }) {
   return (
     <div
-      onClick={() => setOpened(!opened)}
+      onClick={menuHandler}
       className={classNames(
         `tham tham-e-squeeze tham-w-9 hidden max-lg:block`,
         {
@@ -16,7 +14,7 @@ function BurgerIcon() {
       )}
     >
       <div className="tham-box">
-        <div className="tham-inner" />
+        <div className="tham-inner bg-indigo-950 dark:bg-white" />
       </div>
     </div>
   );

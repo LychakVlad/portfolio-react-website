@@ -1,16 +1,14 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-const NavSection = () => {
-  const links = ['Skills', 'Projects', 'About', 'Contact'];
-
+const NavSectionBig = ({ links }) => {
   return (
     <div className="max-lg:hidden ">
-      <ul className="flex">
+      <ul className="flex pointer-events-auto">
         {links.map((link) => (
-          <li className="mx-4 relative group">
+          <li className="mx-4 relative group" key={link}>
             <AnchorLink
-              href={'#' + link}
+              href={'#' + link.toLocaleLowerCase()}
               className="hover:text-indigo-600 dark:text-neutral-200 dark:hover:text-indigo-300 transition-colors duration-300"
             >
               {link}
@@ -24,4 +22,4 @@ const NavSection = () => {
   );
 };
 
-export default NavSection;
+export default NavSectionBig;

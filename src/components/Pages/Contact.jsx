@@ -3,7 +3,7 @@ import LargeTitle from '../Titles/LargeTitle';
 import Button from '../UI/Button';
 import TextArea from '../UI/TextArea';
 import emailjs from '@emailjs/browser';
-import FormSubmit from '../FormSubmit';
+import FormSubmit from '../modals/FormSubmit';
 import { useForm } from 'react-hook-form';
 import cn from 'classnames';
 
@@ -47,7 +47,7 @@ const Contact = () => {
         id="contact"
         className="section container xl  mx-auto min-h-full text-indigo-950 flex items-center font-poppins flex-col w-full mb-10 px-5"
       >
-        <div className="text-center mb-8">
+        <div className="text-center my-20">
           <LargeTitle title="Lets talk about your ideas!" />
         </div>
         <div className="w-full">
@@ -72,7 +72,7 @@ const Contact = () => {
                 )}
               />
               <label
-                for="floating_outlined"
+                htmlFor="floating_outlined"
                 className={cn(
                   'pointer-events-none absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-2 origin-[0] bg-transparent  px-3  peer-focus:text-indigo-400  peer-focus:dark:text-indigo-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-4 peer-focus:scale-75 peer-focus:-translate-y-4 left-1 peer-focus:bg-transparent ',
                   {
@@ -117,7 +117,7 @@ const Contact = () => {
                 )}
               />
               <label
-                for="floating_outlined"
+                htmlFor="floating_outlined"
                 className={cn(
                   'pointer-events-none absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-2 origin-[0] bg-transparent  px-3  peer-focus:text-indigo-400  peer-focus:dark:text-indigo-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-4 peer-focus:scale-75 peer-focus:-translate-y-4 left-1 peer-focus:bg-transparent',
                   {

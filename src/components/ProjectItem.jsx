@@ -13,15 +13,18 @@ const ProjectItem = ({ link, project }) => {
         </p>
         <div className="mt-5">
           {project.techs.map((item) => (
-            <span className=" p-1 px-5 bg-slate-200 rounded-md  mr-5 pointer-events-none max-lg:text-sm max-md:mr-2 max-md:px-3 max-lg:mr-4">
+            <span
+              className=" p-1 px-5 bg-slate-200 rounded-md  mr-5 pointer-events-none max-lg:text-sm max-md:mr-2 max-md:px-3 max-lg:mr-4"
+              key={item}
+            >
               {item}
             </span>
           ))}
         </div>
-        <div className="flex mt-8 ">
+        <div className="flex mt-8 max-md:flex-col">
           <a
             href={project.link2}
-            className="flex items-center  hover:opacity-80 transition-opacity duration-300 cursor-pointer dark:fill-slate-200 fill-indigo-950 mr-2"
+            className="flex items-center  hover:opacity-80 transition-opacity duration-300 cursor-pointer dark:fill-slate-200 fill-indigo-950 mr-2 max-md:mr-0 max-md:mb-3"
             target="_blank"
             rel="noreferrer"
           >
@@ -33,7 +36,7 @@ const ProjectItem = ({ link, project }) => {
           </a>
           <a
             href={project.link1}
-            className="flex items-center  hover:opacity-80 transition-opacity duration-300 cursor-pointer dark:fill-slate-200  fill-indigo-950 ml-4"
+            className="flex items-center  hover:opacity-80 transition-opacity duration-300 cursor-pointer dark:fill-slate-200  fill-indigo-950 ml-4 max-md:ml-0"
             target="_blank"
             rel="noreferrer"
           >

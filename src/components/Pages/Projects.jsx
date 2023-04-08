@@ -8,7 +8,7 @@ import Portfolio from '../../assets/portfolio.png';
 
 const Projects = () => {
   const firstProject = {
-    title: 'E-commerce-website',
+    title: 'E-commerce website',
     description:
       'This is sample project description random things are here in description This is sample project lorem ipsum generator for content',
     techs: ['Pug', 'Js', 'Scss', 'Gulp'],
