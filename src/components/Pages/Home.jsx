@@ -24,7 +24,7 @@ const Home = () => {
         </h3>
       </div>
       <div>
-        <div className="shape overflow-hidden shadow-2xl w-[380px]  max-md:w-[320px] max-lg:mt-10 max-md:mt-4">
+        <div className="shape overflow-hidden shadow-2xl w-[380px]  max-md:w-[320px] max-lg:mt-10 max-md:mt-4 bg-neutral-100 dark:bg-indigo-950">
           <img src={Photo} alt="Me" className="overflow-hidden" />
         </div>
       </div>
