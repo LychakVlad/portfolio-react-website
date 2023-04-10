@@ -6,7 +6,7 @@ const Home = () => {
     <div
       id="home"
       className="section container xl m-auto min-h-screen text-indigo-950 flex items-center justify-around font-poppins max-lg:flex-col px-8 max-lg 
-      max-lg:justify-center max-lg:min-h-full pt-16 relative max-lg:pt-28 max-md:pt-36"
+      max-lg:justify-center max-lg:min-h-full pt-16 relative max-lg:pt-28 max-md:pt-28 max-lg:px-0"
     >
       <div>
         <h1 className="font-bold  text-7xl   mx-4  leading-tight dark:text-neutral-100 max-sm:text-5xl">

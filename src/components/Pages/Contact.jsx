@@ -45,7 +45,7 @@ const Contact = () => {
     <>
       <div
         id="contact"
-        className="section container xl  mx-auto min-h-full text-indigo-950 flex items-center font-poppins flex-col w-full mb-10 px-5"
+        className="section container xl  mx-auto min-h-full text-indigo-950 flex items-center font-poppins flex-col w-full mb-10 px-5 transition-all duration-300s"
       >
         <div className="text-center my-20">
           <LargeTitle title="Lets talk about your ideas!" />
@@ -53,7 +53,7 @@ const Contact = () => {
         <div className="w-full">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="w-ful grid  grid-rows-1 gap-5 bg-white p-12 rounded-3xl shadow-xl m-auto text-slate-600 dark:bg-indigo-900  max-w-xl max-lg:p-7 "
+            className="w-ful grid  grid-rows-1 gap-5 bg-white p-12 transition-all duration-300s rounded-3xl shadow-xl m-auto text-slate-600 dark:bg-indigo-900  max-w-xl max-lg:p-7 "
             ref={form}
           >
             <div className="relative">

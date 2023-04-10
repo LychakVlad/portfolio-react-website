@@ -3,15 +3,15 @@ import { useEffect, useState } from 'react';
 const useBodyScrollLock = () => {
   const bodyStyle = document.body.style;
 
-  const [isLocked, setIsLocked] = useState(bodyStyle.overflowY === 'hidden');
+  const [isLocked, setIsLocked] = useState(bodyStyle.overflow === 'hidden');
 
   useEffect(() => {
-    bodyStyle.overflowY = isLocked ? 'hidden' : 'auto';
+    bodyStyle.overflow = isLocked ? 'hidden' : 'auto';
   }, [isLocked, bodyStyle]);
 
-  const toggle = () => setIsLocked(!isLocked);
+  const toggleLock = () => setIsLocked(!isLocked);
 
-  return [isLocked, toggle];
+  return [isLocked, toggleLock];
 };
 
 export default useBodyScrollLock;

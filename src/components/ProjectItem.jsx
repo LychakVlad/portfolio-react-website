@@ -5,7 +5,7 @@ import { ReactComponent as Search } from '../assets/search.svg';
 
 const ProjectItem = ({ link, project }) => {
   return (
-    <div className="flex rounded-3xl overflow-hidden bg-white dark:bg-indigo-900 p-12 items-center mb-14 hover:scale-105 transition-transform duration-300 cursor-default shadow-xl max-lg:flex-col max-lg:p-0 ">
+    <div className="flex rounded-3xl overflow-hidden bg-white dark:bg-indigo-900 p-12 items-center mb-14 hover:scale-105 transition-all duration-300 cursor-default shadow-xl max-lg:flex-col max-lg:p-0 ">
       <div className=" max-w-xs mr-8 max-lg:mr-0 max-md:px-4 max-md:pt-7 max-lg:pt-10 relative">
         <MediumTitle title={project.title} />
         <p className="text-slate-600 dark:text-slate-200 max-md:text-sm max-lg:text-xl">
