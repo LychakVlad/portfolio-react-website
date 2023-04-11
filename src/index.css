@@ -12,6 +12,7 @@
 
 @layer components {
   .shape {
+    transform: translateZ(0);
     border: rgb(30 27 75) 2px solid;
     animation: morph 8s ease-in-out infinite;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;

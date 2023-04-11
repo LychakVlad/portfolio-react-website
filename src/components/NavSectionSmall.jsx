@@ -1,5 +1,4 @@
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import IconsSection from './IconsSection';
 import cn from 'classnames';
 
