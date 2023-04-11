@@ -12,12 +12,15 @@
 
 @layer components {
   .shape {
-    transform: translate3d(0, 0, 0);
     border: rgb(30 27 75) 2px solid;
     animation: morph 8s ease-in-out infinite;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     transition: all 1s ease-in-out;
   }
+}
+
+.hideOverflow {
+  transform: translateZ(0);
 }
 
 @keyframes morph {
