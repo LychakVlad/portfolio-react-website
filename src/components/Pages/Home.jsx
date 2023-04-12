@@ -4,8 +4,7 @@ import Photo from '../../assets/photo.jpg';
 const Home = () => {
   return (
     <div
-      id="home"
-      className="section container xl m-auto min-h-screen text-indigo-950 flex items-center justify-around font-poppins max-lg:flex-col px-8 max-lg 
+      className="hideOverflow container xl m-auto min-h-screen text-indigo-950 flex items-center justify-around font-poppins max-lg:flex-col px-8 max-lg 
       max-lg:justify-center max-lg:min-h-full pt-16 relative max-lg:pt-28 max-md:pt-36"
     >
       <div>
@@ -23,7 +22,7 @@ const Home = () => {
           I make usefull, responsive web-applications and websites
         </h3>
       </div>
-      <div>
+      <div className="hideOverflow">
         <div className="shape overflow-hidden shadow-2xl w-[380px]  max-md:w-[320px] max-lg:mt-10 max-md:mt-4 bg-neutral-100 dark:bg-indigo-950">
           <img src={Photo} alt="Me" className="hideOverflow overflow-hidden" />
         </div>

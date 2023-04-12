@@ -10,14 +10,23 @@
     animation: morph 8s ease-in-out infinite;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     transition: all 1s ease-in-out;
-    transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
-}
+  .hideOverflow {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
-.hideOverflow {
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
+  .scroll-lock-ios {
+    position: fixed;
+
+    overflow: hidden;
+  }
+
+  .scroll-lock {
+    overflow-y: hidden;
+  }
 }
 
 @keyframes morph {

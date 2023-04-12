@@ -1,5 +1,4 @@
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import IconsSection from './IconsSection';
 import cn from 'classnames';
 
@@ -7,7 +6,7 @@ const NavSectionSmall = ({ links, opened, menuHandler }) => {
   return (
     <div
       className={cn(
-        ' min-h-screen min-w-full bg-neutral-100 fixed z-30 flex flex-col dark:bg-indigo-950 opacity-0 pointer-events-none transition-all duration-300 top-[80px]',
+        'nav-section min-h-screen min-w-full bg-neutral-100 fixed z-30 flex flex-col dark:bg-indigo-950 opacity-0 pointer-events-none transition-all duration-300 top-[80px]',
         { ' opacity-100': opened }
       )}
     >
