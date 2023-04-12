@@ -10,12 +10,12 @@
     animation: morph 8s ease-in-out infinite;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     transition: all 1s ease-in-out;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
   .hideOverflow {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
 
   .scroll-lock-ios {
