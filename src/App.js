@@ -7,7 +7,7 @@ import Header from './components/Pages/Header';
 
 function App() {
   return (
-    <div className=" bg-neutral-100 dark:bg-indigo-950 duration-300 relative">
+    <div className="bg-neutral-100 dark:bg-indigo-950 duration-300 relative">
       <Header />
       <Home />
       <Skills />

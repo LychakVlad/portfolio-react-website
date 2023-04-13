@@ -23,7 +23,7 @@ const Home = () => {
         </h3>
       </div>
       <div className="hideOverflow">
-        <div className="shape overflow-hidden shadow-2xl w-[380px]  max-md:w-[320px] max-lg:mt-10 max-md:mt-4 bg-neutral-100 dark:bg-indigo-950">
+        <div className="hideOverflow shape overflow-hidden shadow-2xl w-[380px]  max-md:w-[320px] max-lg:mt-10 max-md:mt-4 bg-neutral-100 dark:bg-indigo-950">
           <img src={Photo} alt="Me" className="hideOverflow overflow-hidden" />
         </div>
       </div>
