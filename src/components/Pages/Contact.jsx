@@ -45,7 +45,7 @@ const Contact = () => {
     <>
       <div
         id="contact"
-        className="section container xl  mx-auto min-h-full text-indigo-950 flex items-center font-poppins flex-col w-full mb-10 px-5"
+        className="section container xl  mx-auto min-h-full text-indigo-950 flex items-center font-poppins flex-col w-full mb-10 px-5 transition-all duration-300"
       >
         <div className="text-center my-20">
           <LargeTitle title="Lets talk about your ideas!" />
