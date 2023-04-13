@@ -12,6 +12,8 @@
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     transition: all 1s ease-in-out;
     animation-fill-mode: forwards;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
   .hideOverflow {
     -webkit-transform: translateZ(0);
