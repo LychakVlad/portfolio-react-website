@@ -16,12 +16,10 @@ const NavSectionSmall = ({ links, opened, menuHandler }) => {
             <a
               onClick={menuHandler}
               href={'#' + link.toLocaleLowerCase()}
-              className="hover:text-indigo-600 dark:text-neutral-200 dark:hover:text-indigo-300 transition-colors duration-300 pointer-events-auto"
+              className=" dark:text-neutral-200 transition-colors duration-300 pointer-events-auto"
             >
               {link}
             </a>
-            <span className="absolute -bottom-1 left-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-300 group-hover:w-1/2 group-hover:transition-all duration-300"></span>
-            <span className="absolute -bottom-1 right-1/2 w-0 h-[2px] bg-indigo-600 dark:bg-indigo-300 group-hover:w-1/2 group-hover:transition-all duration-300"></span>
           </li>
         ))}
       </ul>

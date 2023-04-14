@@ -8,7 +8,7 @@ const FormSubmit = ({ popup, closePopup }) => {
     <div
       onClick={closePopup}
       className={cn(
-        'opacity-0 pointer-events-none min-h-screen min-w-full z-10 bg-slate-950 bg-opacity-40 fixed left-0 bottom-0 transition-opacity duration-300',
+        'opacity-0 pointer-events-none min-h-screen min-w-full z-50 bg-slate-950 bg-opacity-40 fixed left-0 bottom-0 transition-opacity duration-300',
         { 'opacity-100 pointer-events-auto': popup }
       )}
     >
