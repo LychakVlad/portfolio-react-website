@@ -14,6 +14,8 @@
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+    background-color: #f7fafc;
+    z-index: 50;
   }
 
   .scroll-lock-ios {
@@ -24,5 +26,11 @@
 
   .scroll-lock {
     overflow-y: hidden;
+  }
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
   }
 }
