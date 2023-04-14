@@ -5,6 +5,11 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
+        morph: {
+          '0%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
+          '50%': { borderRadius: '30% 60% 70% 40% / 50% 60% 30% 60%' },
+          '100%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
+        },
         wave: {
           '0%': { transform: 'rotate(0.0deg)' },
           '10%': { transform: 'rotate(14deg)' },
@@ -40,12 +45,18 @@ module.exports = {
         },
       },
       animation: {
+        morph: 'morph 8s ease-in-out infinite',
         'waving-hand': 'wave 2s linear infinite',
         headShake: 'headShake 1s 1',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+    },
+  },
+  variants: {
+    extend: {
+      borderRadius: ['hover', 'focus', 'active'],
     },
   },
   plugins: [require('tailwind-hamburgers')],

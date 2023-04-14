@@ -23,7 +23,7 @@ const Home = () => {
         </h3>
       </div>
       <div className="transform translate-z-0">
-        <div className="transform translate-z-0 shape overflow-hidden relative shadow-2xl w-[380px]  max-md:w-[320px] max-lg:mt-10 max-md:mt-4 bg-neutral-100 dark:bg-indigo-950">
+        <div className="shape animate-morph overflow-hidden relative shadow-2xl w-[380px]  max-md:w-[320px] max-lg:mt-10 max-md:mt-4 bg-neutral-100 dark:bg-indigo-950">
           <img
             src={Photo}
             alt="Me"

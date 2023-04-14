@@ -6,8 +6,8 @@ const NavSectionSmall = ({ links, opened, menuHandler }) => {
   return (
     <div
       className={cn(
-        'nav-section min-h-screen min-w-full bg-neutral-100 fixed z-30 flex flex-col dark:bg-indigo-950 opacity-0 pointer-events-none transition-all duration-300 top-[80px]',
-        { ' opacity-100': opened }
+        'nav-section min-h-screen min-w-full bg-neutral-100 fixed z-30 flex flex-col dark:bg-indigo-950 opacity-0 pointer-events-none transition-all duration-300 top-[80px] pointer-events-none',
+        { ' opacity-100 pointer-events-auto': opened }
       )}
     >
       <ul className="flex flex-col justify-center items-center mt-10">
