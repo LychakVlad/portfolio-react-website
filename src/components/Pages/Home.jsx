@@ -22,12 +22,12 @@ const Home = () => {
           I make usefull, responsive web-applications and websites
         </h3>
       </div>
-      <div className="transform translate-z-0 perspective: 1000px">
-        <div className="shape z-10 animate-morph overflow-hidden relative shadow-2xl w-[380px]  max-md:w-[320px] max-lg:mt-10 max-md:mt-4 bg-neutral-100 dark:bg-indigo-950">
+      <div className="transform translate-z-0 perspective-1000">
+        <div className="shape z-10 animate-morph overflow-hidden relatives w-[380px]  max-md:w-[320px] max-lg:mt-10 max-md:mt-4 bg-neutral-100 dark:bg-indigo-950">
           <img
             src={Photo}
             alt="Me"
-            className="transform translate-z-0 overflow-hidden"
+            className="transform translate-z-0 object-cover h-full w-full"
           />
         </div>
       </div>
