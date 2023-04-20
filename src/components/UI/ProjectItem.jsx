@@ -1,7 +1,7 @@
 import React from 'react';
-import MediumTitle from './Titles/MediumTitle';
-import { ReactComponent as Githubs } from '../assets/github-2.svg';
-import { ReactComponent as Search } from '../assets/search.svg';
+import MediumTitle from '../Titles/MediumTitle';
+import { ReactComponent as Githubs } from '../../assets/github-2.svg';
+import { ReactComponent as Search } from '../../assets/search.svg';
 
 const ProjectItem = ({ link, project }) => {
   return (
@@ -34,23 +34,25 @@ const ProjectItem = ({ link, project }) => {
               <span className="absolute -bottom-1 left-0 w-0 h-[2px] dark:bg-slate-200 bg-indigo-950 transition-width duration-300 group-hover:w-full"></span>
             </p>
           </a>
-          <a
-            href={project.link1}
-            className="flex items-center  hover:opacity-80 transition-opacity duration-300 cursor-pointer dark:fill-slate-200  fill-indigo-950 ml-4 max-md:ml-0"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Search style={{ width: 34, height: 34 }} />
-            <p className="relative group ml-2">
-              <span className="relative dark:text-slate-200">
-                Live Preview{' '}
-              </span>
-              <span className="absolute -bottom-1 left-0 w-0 h-[2px]  bg-indigo-950 dark:bg-slate-200 transition-width duration-300 group-hover:w-full"></span>
-            </p>
-          </a>
+          {project.noLink ? null : (
+            <a
+              href={project.link1}
+              className="flex items-center  hover:opacity-80 transition-opacity duration-300 cursor-pointer dark:fill-slate-200  fill-indigo-950 ml-4 max-md:ml-0"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Search style={{ width: 34, height: 34 }} />
+              <p className="relative group ml-2">
+                <span className="relative dark:text-slate-200">
+                  Live Preview{' '}
+                </span>
+                <span className="absolute -bottom-1 left-0 w-0 h-[2px]  bg-indigo-950 dark:bg-slate-200 transition-width duration-300 group-hover:w-full"></span>
+              </p>
+            </a>
+          )}
         </div>
       </div>
-      <div className="w-[550px] max-lg:w-[450px] my-8 px-4 overflow-hidden max-md:w-[300px]">
+      <div className="w-[550px] max-lg:w-[450px] my-8 px-4 overflow-hidden max-md:w-[300px] max-h-80">
         <img src={link} alt={project.title} className="rounded-3xl" />
       </div>
     </div>

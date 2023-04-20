@@ -48,7 +48,7 @@ const Contact = () => {
         className="section container xl  mx-auto min-h-full text-indigo-950 flex items-center font-poppins flex-col w-full mb-10 px-5 transition-all duration-300"
       >
         <div className="text-center my-20">
-          <LargeTitle title="Open to suggestions" />
+          <LargeTitle title="Open to job opportunities" />
         </div>
         <div className="w-full">
           <form

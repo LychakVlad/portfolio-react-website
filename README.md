@@ -21,7 +21,7 @@
 
 ## About The Project
 
-The site I created to showcase my skills and projects
+The Portfolio React Website is a web application that provides an overview my skills and experiences. This project is developed using technologies such as React, HTML, Tailwind and EmailJS. The application is responsive, which means it can be accessed from any device.The contact page includes a form that allows visitors to send messages to the developer.
 
 ### Built With
 
@@ -29,6 +29,7 @@ The site I created to showcase my skills and projects
 - HTML5
 - TAILWIND
 - CSS3
+- EmailJS
 
 ## Contact
 
