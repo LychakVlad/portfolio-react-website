@@ -14,8 +14,8 @@ const Projects = () => {
     description:
       'This is an e-commerce website built with JavaScript, Gulp, Webpack, Pug, and Sass. It includes a product catalog, shopping cart, checkout process, form validation, and other features. ',
     techs: ['Pug', 'Js', 'Sass', 'Gulp'],
-    link1: 'https://lychakvlad.github.io/e-commerce-clothing-shop/',
-    link2: 'https://github.com/LychakVlad/e-commerce-clothing-shop',
+    link2: 'https://lychakvlad.github.io/e-commerce-clothing-shop/',
+    link1: 'https://github.com/LychakVlad/e-commerce-clothing-shop',
   };
 
   const secondProject = {
@@ -23,8 +23,8 @@ const Projects = () => {
     description:
       'The news website is built using HTML, Tailwind, React. It allows users to browse news articles, read full articles, and filter articles by source or through the keyword search bar',
     techs: ['React', 'Tailwind', 'Figma'],
-    link1: 'https://github.com/LychakVlad/news-website',
-    link2: 'https://lychakvlad.github.io/news-website/',
+    link2: 'https://github.com/LychakVlad/news-website',
+    link1: 'https://lychakvlad.github.io/news-website/',
   };
 
   const thirdProject = {
@@ -32,8 +32,8 @@ const Projects = () => {
     description:
       'Cryptocurrency tracker app. Allows users to track the prices of cryptocurrencies. The project uses the CoinGecko API to fetch real-time cryptocurrency data and provides a user-friendly interface with a responsive design.',
     techs: ['React', 'Tailwind', 'HTML'],
-    link1: 'https://github.com/LychakVlad/crypto-check-app',
-    link2: 'https://lychakvlad.github.io/crypto-check-app/',
+    link2: 'https://github.com/LychakVlad/crypto-check-app',
+    link1: 'https://lychakvlad.github.io/crypto-check-app/',
   };
 
   const fourthProject = {
@@ -41,8 +41,8 @@ const Projects = () => {
     description:
       'Todo list app built using React. The application allows users to create and manage their to-do list with features such as adding and deleting tasks. The project includes a simple, yet modern user interface that provides a responsive design for optimal user experience on both desktop and mobile devices.',
     techs: ['React', 'Tailwind', 'HTML'],
-    link1: 'https://github.com/LychakVlad/react-todo-app',
-    link2: 'https://lychakvlad.github.io/react-todo-app/',
+    link2: 'https://github.com/LychakVlad/react-todo-app',
+    link1: 'https://lychakvlad.github.io/react-todo-app/',
   };
 
   const fivthProject = {
@@ -50,8 +50,8 @@ const Projects = () => {
     description:
       'This is a React-based portfolio website showcasing my skills and projects. It features an email form, modern design with CSS animations, fo a responsive layout.',
     techs: ['React', 'Tailwind', 'EmailJS'],
-    link1: 'https://github.com/LychakVlad/portfolio-react-app',
     link2: 'https://github.com/LychakVlad/portfolio-react-app',
+    link1: 'https://github.com/LychakVlad/portfolio-react-app',
     noLink: true,
   };
 
