@@ -10,8 +10,8 @@ function App() {
     <div className="bg-neutral-100 dark:bg-indigo-950 duration-300 relative">
       <Header />
       <Home />
-      <Skills />
       <Projects />
+      <Skills />
       <Contact />
       <Footer />
     </div>

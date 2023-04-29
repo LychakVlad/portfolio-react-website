@@ -14,9 +14,12 @@ const NavSectionSmall = ({ links, opened, menuHandler }) => {
         {links.map((link) => (
           <li className="mx-4 my-6 relative group text-3xl" key={link}>
             <a
-              onClick={menuHandler}
-              href={'#' + link.toLocaleLowerCase()}
-              className=" dark:text-neutral-200 transition-colors duration-300 pointer-events-auto"
+              onClick={opened ? menuHandler : null}
+              href={opened ? '#' + link.toLocaleLowerCase() : null}
+              className={cn(
+                ' dark:text-neutral-200 transition-colors duration-300 pointer-events-auto',
+                { 'pointer-events-none cursor-default': !opened }
+              )}
             >
               {link}
             </a>

@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"name": "news-website",
+		"path": "../../../news-website"
+	},
+	{
+		"name": "projects",
+		"path": "../.."
+	}
+],
+  "settings": {}
+}

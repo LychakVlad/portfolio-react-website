@@ -6,14 +6,13 @@ import Allegria from '../../assets/allegria.png';
 import News from '../../assets/news.png';
 import ToDo from '../../assets/ToDo.png';
 import Crypto from '../../assets/crypto.png';
-import Portfolio from '../../assets/portfolio.png';
 
 const Projects = () => {
   const firstProject = {
     title: 'E-commerce website',
     description:
-      'This is an e-commerce website built with JavaScript, Gulp, Webpack, Pug, and Sass. It includes a product catalog, shopping cart, checkout process, form validation, and other features. ',
-    techs: ['Pug', 'Js', 'Sass', 'Gulp'],
+      'The e-commerce clothing shop is a website that allows users to browse and purchase a variety of clothing products online. It includes a product catalog, shopping cart, checkout process, form validation, and other features. This is a prototype without a backend part. ',
+    techs: ['HTML', 'Js', 'Sass', 'Gulp', 'Pug', 'Webpack'],
     link2: 'https://lychakvlad.github.io/e-commerce-clothing-shop/',
     link1: 'https://github.com/LychakVlad/e-commerce-clothing-shop',
   };
@@ -21,8 +20,8 @@ const Projects = () => {
   const secondProject = {
     title: 'News website',
     description:
-      'The news website is built using HTML, Tailwind, React. It allows users to browse news articles, read full articles, and filter articles by source or through the keyword search bar',
-    techs: ['React', 'Tailwind', 'Figma'],
+      'The news website allows users to browse news articles from multiple news tellers without leaving one page, read full articles, and filter articles by source or through the keyword search bar. Due to hosting, the first API loading might take up to 30sec.',
+    techs: ['React', 'Tailwind', 'HTML', 'Figma'],
     link2: 'https://github.com/LychakVlad/news-website',
     link1: 'https://lychakvlad.github.io/news-website/',
   };
@@ -39,20 +38,10 @@ const Projects = () => {
   const fourthProject = {
     title: 'TO-DO App',
     description:
-      'Todo list app built using React. The application allows users to create and manage their to-do list with features such as adding and deleting tasks. The project includes a simple, yet modern user interface that provides a responsive design for optimal user experience on both desktop and mobile devices.',
+      'The application allows users to create and manage their to-do lists with features such as adding and deleting tasks. The project includes a simple, yet modern user interface that provides a responsive design for optimal user experience on both desktop and mobile devices.',
     techs: ['React', 'Tailwind', 'HTML'],
     link2: 'https://github.com/LychakVlad/react-todo-app',
     link1: 'https://lychakvlad.github.io/react-todo-app/',
-  };
-
-  const fivthProject = {
-    title: 'Portfolio website',
-    description:
-      'This is a React-based portfolio website showcasing my skills and projects. It features an email form, modern design with CSS animations, fo a responsive layout.',
-    techs: ['React', 'Tailwind', 'EmailJS'],
-    link2: 'https://github.com/LychakVlad/portfolio-react-app',
-    link1: 'https://github.com/LychakVlad/portfolio-react-app',
-    noLink: true,
   };
 
   return (
@@ -69,7 +58,6 @@ const Projects = () => {
         <ProjectItem link={News} project={secondProject} />
         <ProjectItem link={Crypto} project={thirdProject} />
         <ProjectItem link={ToDo} project={fourthProject} />
-        <ProjectItem link={Portfolio} project={fivthProject} />
       </div>
     </div>
   );
