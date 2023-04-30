@@ -13,8 +13,8 @@ const Projects = () => {
     description:
       'The e-commerce clothing shop is a website that allows users to browse and purchase a variety of clothing products online. It includes a product catalog, shopping cart, checkout process, form validation, and other features. This is a prototype without a backend part. ',
     techs: ['HTML', 'Js', 'Sass', 'Gulp', 'Pug', 'Webpack'],
-    link2: 'https://lychakvlad.github.io/e-commerce-clothing-shop/',
-    link1: 'https://github.com/LychakVlad/e-commerce-clothing-shop',
+    link2: 'https://github.com/LychakVlad/e-commerce-clothing-shop',
+    link1: 'https://lychakvlad.github.io/e-commerce-clothing-shop/',
   };
 
   const secondProject = {

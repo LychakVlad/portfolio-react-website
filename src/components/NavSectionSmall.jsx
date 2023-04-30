@@ -15,7 +15,7 @@ const NavSectionSmall = ({ links, opened, menuHandler }) => {
           <li className="mx-4 my-6 relative group text-3xl" key={link}>
             <a
               onClick={opened ? menuHandler : null}
-              href={opened ? '#' + link.toLocaleLowerCase() : null}
+              href={`#${link.toLowerCase()}`}
               className=" dark:text-neutral-200 transition-colors duration-300"
             >
               {link}
