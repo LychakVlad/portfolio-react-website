@@ -6,8 +6,8 @@ const NavSectionSmall = ({ links, opened, menuHandler }) => {
   return (
     <div
       className={cn(
-        'nav-section min-h-screen min-w-full bg-neutral-100 fixed z-30 flex flex-col dark:bg-indigo-950 opacity-0 pointer-events-none transition-all duration-300 top-[80px]',
-        { ' opacity-100 pointer-events-auto': opened }
+        'nav-section min-h-screen min-w-full opacity-0 bg-neutral-100 fixed z-20 flex flex-col dark:bg-indigo-950 pointer-events-none  transition-all duration-300 top-[80px] ',
+        { 'opacity-100 pointer-events-auto': opened }
       )}
     >
       <ul className="flex flex-col justify-center items-center mt-10">
@@ -16,17 +16,18 @@ const NavSectionSmall = ({ links, opened, menuHandler }) => {
             <a
               onClick={opened ? menuHandler : null}
               href={opened ? '#' + link.toLocaleLowerCase() : null}
-              className={cn(
-                ' dark:text-neutral-200 transition-colors duration-300 pointer-events-auto',
-                { 'pointer-events-none cursor-default': opened }
-              )}
+              className=" dark:text-neutral-200 transition-colors duration-300"
             >
               {link}
             </a>
           </li>
         ))}
       </ul>
-      <div className="flex items-center justify-center my-32">
+      <div
+        className={cn('flex items-center justify-center my-32', {
+          hidden: opened !== true,
+        })}
+      >
         <IconsSection menuHandler={menuHandler} />
       </div>
     </div>
