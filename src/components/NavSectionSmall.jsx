@@ -18,7 +18,7 @@ const NavSectionSmall = ({ links, opened, menuHandler }) => {
               href={opened ? '#' + link.toLocaleLowerCase() : null}
               className={cn(
                 ' dark:text-neutral-200 transition-colors duration-300 pointer-events-auto',
-                { 'pointer-events-none cursor-default': !opened }
+                { 'pointer-events-none cursor-default': opened }
               )}
             >
               {link}
