@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import IconsSection from '../IconsSection';
+import IconsSection from '../Sections/IconsSection';
 import DarkModeToggle from '../UI/DarkModeToggle';
 import BurgerIcon from '../UI/BurgerIcon';
-import NavSectionBig from '../NavSectionBig';
-import NavSectionSmall from '../NavSectionSmall';
+import NavSectionBig from '../Sections/NavSectionBig';
+import NavSectionSmall from '../Sections/NavSectionSmall';
 import { ScrollLock } from '.././jsPlugin/scrollLock';
 
 window.scrollLock = new ScrollLock();
@@ -23,7 +23,7 @@ const Header = () => {
     setOpened(!opened);
   };
 
-  const links = ['Skills', 'Projects', 'Contact'];
+  const links = ['Projects', 'Skills', 'Contact'];
 
   return (
     <header className="fixed w-full h-[80px] z-40 top-0 left-0 right-0 transition-color duration-300 bg-neutral-100 dark:bg-indigo-950 shadow-[0_-60px_30px_100px_rgba(245,245,245,1)] dark:shadow-[0_-60px_30px_100px_rgba(30,27,75,1)] ">

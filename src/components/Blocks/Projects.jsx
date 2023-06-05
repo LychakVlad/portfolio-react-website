@@ -4,44 +4,34 @@ import LargeSubTitle from '../Titles/LargeSubTitle';
 import ProjectItem from '../UI/ProjectItem';
 import Allegria from '../../assets/allegria.png';
 import News from '../../assets/news.png';
-import ToDo from '../../assets/ToDo.png';
-import Crypto from '../../assets/crypto.png';
+import ExDrop from '../../assets/ExDrop.png';
 
 const Projects = () => {
   const firstProject = {
     title: 'E-commerce website',
     description:
-      'The e-commerce clothing shop is a website that allows users to browse and purchase a variety of clothing products online. It includes a product catalog, shopping cart, checkout process, form validation, and other features. This is a prototype without a backend part. ',
-    techs: ['HTML', 'Js', 'Sass', 'Gulp', 'Pug', 'Webpack'],
+      'The e-commerce clothing shop is a website that allows users to browse and purchase a variety of clothing products online. It includes a product catalog, shopping cart, checkout process, form validation, and other features.',
+    techs: ['HTML', 'Js', 'Scss', 'Gulp', 'Pug', 'Webpack'],
     link2: 'https://github.com/LychakVlad/e-commerce-clothing-shop',
     link1: 'https://lychakvlad.github.io/e-commerce-clothing-shop/',
   };
 
   const secondProject = {
-    title: 'News website',
+    title: 'Delivery service website',
     description:
-      'The news website allows users to browse news articles from multiple news tellers without leaving one page, read full articles, and filter articles by source or through the keyword search bar. Due to hosting, the first API loading might take up to 30sec.',
-    techs: ['React', 'Tailwind', 'HTML', 'Figma'],
-    link2: 'https://github.com/LychakVlad/news-website',
-    link1: 'https://lychakvlad.github.io/news-website/',
+      'The Delivery Service Website is a business-oriented web application that enables users to calculate delivery costs, track packages, and find locations on an interactive map. ',
+    techs: ['React', 'SCSS', 'Jest'],
+    link2: 'https://github.com/LychakVlad/delivery-service-website',
+    link1: 'https://ex-drop-delivery.netlify.app/',
   };
 
   const thirdProject = {
-    title: 'Crypto Check App',
+    title: 'News website',
     description:
-      'Cryptocurrency tracker app. Allows users to track the prices of cryptocurrencies. The project uses the CoinGecko API to fetch real-time cryptocurrency data and provides a user-friendly interface with a responsive design.',
-    techs: ['React', 'Tailwind', 'HTML'],
-    link2: 'https://github.com/LychakVlad/crypto-check-app',
-    link1: 'https://lychakvlad.github.io/crypto-check-app/',
-  };
-
-  const fourthProject = {
-    title: 'TO-DO App',
-    description:
-      'The application allows users to create and manage their to-do lists with features such as adding and deleting tasks. The project includes a simple, yet modern user interface that provides a responsive design for optimal user experience on both desktop and mobile devices.',
-    techs: ['React', 'Tailwind', 'HTML'],
-    link2: 'https://github.com/LychakVlad/react-todo-app',
-    link1: 'https://lychakvlad.github.io/react-todo-app/',
+      'The news website allows users to browse news articles from multiple news tellers without leaving one page, read full articles, and filter articles by source or through the keyword search bar.',
+    techs: ['React', 'Tailwind', 'RESTful API'],
+    link2: 'https://github.com/LychakVlad/news-website',
+    link1: 'https://lychakvlad.github.io/news-website/',
   };
 
   return (
@@ -55,9 +45,8 @@ const Projects = () => {
       </div>
       <div className="max-lg:w-3/4 max-md:w-auto transition-all duration-300">
         <ProjectItem link={Allegria} project={firstProject} />
-        <ProjectItem link={News} project={secondProject} />
-        <ProjectItem link={Crypto} project={thirdProject} />
-        <ProjectItem link={ToDo} project={fourthProject} />
+        <ProjectItem link={ExDrop} project={secondProject} />
+        <ProjectItem link={News} project={thirdProject} />
       </div>
     </div>
   );

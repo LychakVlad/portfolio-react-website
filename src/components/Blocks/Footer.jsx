@@ -1,5 +1,5 @@
 import React from 'react';
-import IconsSection from '../IconsSection';
+import IconsSection from '../Sections/IconsSection';
 
 const Footer = () => {
   return (

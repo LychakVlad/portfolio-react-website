@@ -13,7 +13,7 @@ import Npm from '../../assets/npm.svg';
 import SkillItem from '../UI/SkillItem';
 import LargeTitle from '../Titles/LargeTitle';
 import LargeSubTitle from '../Titles/LargeSubTitle';
-import VS from '../../assets/vs.svg';
+import Redux from '../../assets/redux.svg';
 
 const Skills = () => {
   return (
@@ -30,11 +30,11 @@ const Skills = () => {
         <SkillItem link={Css} title={'CSS3'} />
         <SkillItem link={Js} title={'Java Script'} />
         <SkillItem link={ReactIcons} title={'React'} />
+        <SkillItem link={Redux} title={'Redux'} />
         <SkillItem link={Tailwind} title={'Tailwind'} />
         <SkillItem link={Sass} title={'SASS'} />
         <SkillItem link={Pug} title={'Pug'} />
         <SkillItem link={Gulp} title={'Gulp'} />
-        <SkillItem link={VS} title={'VS Code'} />
         <SkillItem link={Git} title={'Git'} />
         <SkillItem link={Npm} title={'Npm'} />
         <SkillItem link={Node} title={'Node JS'} />

@@ -1,8 +1,8 @@
 import React from 'react';
-import { ReactComponent as Github } from '../assets/github.svg';
-import { ReactComponent as Linkedin } from '../assets/linkedin.svg';
-import { ReactComponent as Google } from '../assets/google.svg';
-import { ReactComponent as Telegram } from '../assets/telegram.svg';
+import { ReactComponent as Github } from '../../assets/github.svg';
+import { ReactComponent as Linkedin } from '../../assets/linkedin.svg';
+import { ReactComponent as Google } from '../../assets/google.svg';
+import { ReactComponent as Telegram } from '../../assets/telegram.svg';
 
 const IconsSection = ({ menuHandler }) => {
   return (
