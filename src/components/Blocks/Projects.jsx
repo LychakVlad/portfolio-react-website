@@ -5,6 +5,7 @@ import ProjectItem from '../UI/ProjectItem';
 import Allegria from '../../assets/allegria.png';
 import News from '../../assets/news.png';
 import ExDrop from '../../assets/ExDrop.png';
+import RecipeBlog from '../../assets/recipe-blog.png';
 
 const Projects = () => {
   const firstProject = {
@@ -26,12 +27,30 @@ const Projects = () => {
   };
 
   const thirdProject = {
-    title: 'News website',
+    title: 'Financial Management Application',
     description:
-      'The news website allows users to browse news articles from multiple news tellers without leaving one page, read full articles, and filter articles by source or through the keyword search bar.',
-    techs: ['React', 'Tailwind', 'RESTful API'],
-    link2: 'https://github.com/LychakVlad/news-website',
-    link1: 'https://lychakvlad.github.io/news-website/',
+      'This web-based financial management application simplifies tracking income, managing expenses, calculating taxes, and budget planning, while ensuring secure user authentication.',
+    techs: ['React', 'Redux', 'CSS', 'Firebase', 'Jest', 'Cypress'],
+    link2: 'https://github.com/LychakVlad/financial-management-app',
+    link1: 'https://budget-buddy-finance.netlify.app/',
+  };
+
+  const fourthProject = {
+    title: 'Recipe Blog Website',
+    description:
+      'User-friendly recipe web app for creation, editing, and deletion. Ratings and comments supported. Intuitive interface for easy management and quick access across devices.',
+    techs: [
+      'NextJS',
+      'Typescript',
+      'NodeJS',
+      'ExpressJS',
+      'MongoDB',
+      'Tailwind',
+      'Cypress',
+      'AWS',
+    ],
+    link2: 'https://github.com/LychakVlad/my-food-blog',
+    link1: 'https://my-food-blog-two.vercel.app/',
   };
 
   return (
@@ -44,9 +63,10 @@ const Projects = () => {
         <LargeSubTitle title="Things i have built so far" />
       </div>
       <div className="max-lg:w-3/4 max-md:w-auto transition-all duration-300">
+        <ProjectItem link={News} project={thirdProject} />
+        <ProjectItem link={RecipeBlog} project={fourthProject} />
         <ProjectItem link={Allegria} project={firstProject} />
         <ProjectItem link={ExDrop} project={secondProject} />
-        <ProjectItem link={News} project={thirdProject} />
       </div>
     </div>
   );
