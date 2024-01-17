@@ -4,7 +4,6 @@ import LargeSubTitle from '../Titles/LargeSubTitle';
 import ProjectItem from '../UI/ProjectItem';
 import Allegria from '../../assets/allegria.png';
 import News from '../../assets/news.png';
-import ExDrop from '../../assets/ExDrop.png';
 import RecipeBlog from '../../assets/recipe-blog.png';
 
 const Projects = () => {
@@ -15,15 +14,6 @@ const Projects = () => {
     techs: ['HTML', 'Js', 'Scss', 'Gulp', 'Pug', 'Webpack'],
     link2: 'https://github.com/LychakVlad/e-commerce-clothing-shop',
     link1: 'https://lychakvlad.github.io/e-commerce-clothing-shop/',
-  };
-
-  const secondProject = {
-    title: 'Delivery service website',
-    description:
-      'The Delivery Service Website is a business-oriented web application that enables users to calculate delivery costs, track packages, and find locations on an interactive map. ',
-    techs: ['React', 'SCSS', 'Jest'],
-    link2: 'https://github.com/LychakVlad/delivery-service-website',
-    link1: 'https://ex-drop-delivery.netlify.app/',
   };
 
   const thirdProject = {
@@ -66,7 +56,6 @@ const Projects = () => {
         <ProjectItem link={News} project={thirdProject} />
         <ProjectItem link={RecipeBlog} project={fourthProject} />
         <ProjectItem link={Allegria} project={firstProject} />
-        <ProjectItem link={ExDrop} project={secondProject} />
       </div>
     </div>
   );
