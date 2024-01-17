@@ -1,15 +1,15 @@
 import React from 'react';
-import Html from '../../assets/html.svg';
-import Css from '../../assets/css3.svg';
-import Js from '../../assets/js.svg';
+import HTML from '../../assets/html.svg';
+import CSS3 from '../../assets/css3.svg';
+import JavaScript from '../../assets/js.svg';
 import ReactIcons from '../../assets/react.svg';
 import Tailwind from '../../assets/tailwind.svg';
 import Sass from '../../assets/sass.svg';
-import Pug from '../../assets/pug.svg';
-import Gulp from '../../assets/gulp.svg';
-import Git from '../../assets/git.svg';
+import Express from '../../assets/express-js.svg';
 import Node from '../../assets/node-js.svg';
-import Npm from '../../assets/npm.svg';
+import TypeScript from '../../assets/typescript.svg';
+import PostgreSQL from '../../assets/postgresql.svg';
+import MongoDB from '../../assets/mongodb.svg';
 import SkillItem from '../UI/SkillItem';
 import LargeTitle from '../Titles/LargeTitle';
 import LargeSubTitle from '../Titles/LargeSubTitle';
@@ -26,18 +26,18 @@ const Skills = () => {
         <LargeSubTitle title="Technologies I have been working with recently" />
       </div>
       <div className="grid grid-cols-6 grid-rows-2 max-sm:grid-cols-2 gap-14 max-md:grid-cols-3 max-lg:grid-cols-3">
-        <SkillItem link={Html} title={'HTML5'} />
-        <SkillItem link={Css} title={'CSS3'} />
-        <SkillItem link={Js} title={'Java Script'} />
+        <SkillItem link={HTML} title={'HTML5'} />
+        <SkillItem link={CSS3} title={'CSS3'} />
+        <SkillItem link={JavaScript} title={'JavaScript'} />
         <SkillItem link={ReactIcons} title={'React'} />
+        <SkillItem link={TypeScript} title={'TypeScript'} />
+        <SkillItem link={Node} title={'Node JS'} />
+        <SkillItem link={Express} title={'ExpressJs'} />
         <SkillItem link={Redux} title={'Redux'} />
         <SkillItem link={Tailwind} title={'Tailwind'} />
         <SkillItem link={Sass} title={'SASS'} />
-        <SkillItem link={Pug} title={'Pug'} />
-        <SkillItem link={Gulp} title={'Gulp'} />
-        <SkillItem link={Git} title={'Git'} />
-        <SkillItem link={Npm} title={'Npm'} />
-        <SkillItem link={Node} title={'Node JS'} />
+        <SkillItem link={MongoDB} title={'Mongo DB'} />
+        <SkillItem link={PostgreSQL} title={'PostgreSQL'} />
       </div>
     </div>
   );
