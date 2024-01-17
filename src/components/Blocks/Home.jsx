@@ -16,7 +16,7 @@ const Home = () => {
           </p>
         </h1>
         <h2 className="text-5xl font-bold  m-4  leading-tight text-indigo-900 max-w-lg  dark:text-neutral-100 max-lg:text-4xl">
-          Front end developer
+          Full-Stack developer
         </h2>
         <h3 className="font-medium text-3xl  m-4  leading-tight text-indigo-900 max-w-md dark:text-neutral-200 max-lg:text-xl ">
           I make usefull, responsive web-applications and websites
